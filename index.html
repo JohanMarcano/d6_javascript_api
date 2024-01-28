@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Monedas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Conversor de Monedas</h1>
+
+  <label for="monto">Monto en pesos chilenos:</label>
+  <input type="number" id="monto" placeholder="Ingrese monto">
+
+  <label for="moneda">Seleccione la moneda:</label>
+  <select id="moneda">
+    <option value="uf">UF</option>
+    <option value="ivp">IVP</option>
+    <option value="dolar">Dólar</option>
+    <option value="dolar_intercambio">Dólar Intercambio</option>
+    <option value="euro">Euro</option>
+    <option value="ipc">IPC</option>
+    <option value="utm">UTM</option>
+    <option value="imacec">IMACEC</option>
+    <option value="tpm">TPM</option>
+    <option value="libra_cobre">Libra Cobre</option>
+    <option value="tasa_desempleo">Tasa Desempleo</option>
+    <option value="bitcoin">Bitcoin</option>
+  </select>
+
+  <button onclick="consultarCambio()">Consultar Cambio</button>
+
+  <div id="resultado"></div>
+
+  <div id="chart-container">
+    <canvas id="chart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
